@@ -55,7 +55,7 @@ class ScreenUtil {
       _instance._screenHeight = constraints.maxWidth;
     }
 
-    var window = WidgetsBinding.instance.window ?? ui.window;
+    var window = WidgetsBinding.instance.window;
     _instance._pixelRatio = window.devicePixelRatio;
     _instance._statusBarHeight = window.padding.top;
     _instance._bottomBarHeight = window.padding.bottom;
